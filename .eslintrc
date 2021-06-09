@@ -28,6 +28,10 @@
         "extensions": [".js"]
       }
     ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
     "no-shadow": "off",
     "react/state-in-constructor": [2, "never"]
   }
