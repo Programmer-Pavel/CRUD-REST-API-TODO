@@ -28,10 +28,7 @@
         "extensions": [".js"]
       }
     ],
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
+    "linebreak-style": 0,
     "no-shadow": "off",
     "react/state-in-constructor": [2, "never"]
   }
