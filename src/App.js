@@ -38,7 +38,7 @@ export default function App() {
         {isError
                 && (
                 <Alert severity="error">
-                  {errorMessages.map((msg, i) => <div key={i}>{msg}</div>)}
+                  {errorMessages.map((msg) => <div key={msg}>{msg}</div>)}
                 </Alert>
                 )}
       </div>

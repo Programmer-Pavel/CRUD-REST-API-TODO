@@ -3,6 +3,7 @@ import { TextField } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import TodoItem from './TodoItem';
 
 const useStyles = makeStyles({
@@ -20,7 +21,10 @@ const useStyles = makeStyles({
 });
 
 const TodoList = ({
-  setIsError, setErrorMessages, todos, setTodos,
+  setIsError,
+  setErrorMessages,
+  todos,
+  setTodos,
 }) => {
   const classes = useStyles();
 
@@ -156,3 +160,10 @@ const TodoList = ({
 };
 
 export default TodoList;
+
+TodoList.propTypes = {
+  setIsError: PropTypes.func.isRequired,
+  todos: PropTypes.instanceOf(Array).isRequired,
+  setErrorMessages: PropTypes.func.isRequired,
+  setTodos: PropTypes.func.isRequired,
+};

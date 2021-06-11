@@ -9,6 +9,7 @@ import {
   TextField,
 } from '@material-ui/core';
 import ClearOutlinedIcon from '@material-ui/icons/ClearOutlined';
+import PropTypes from 'prop-types';
 
 const TodoItem = ({
   todos,
@@ -58,3 +59,15 @@ const TodoItem = ({
 );
 
 export default TodoItem;
+
+TodoItem.propTypes = {
+  todos: PropTypes.instanceOf(Array).isRequired,
+  editTodo: PropTypes.func.isRequired,
+  setTodoEditing: PropTypes.func.isRequired,
+  setEditingText: PropTypes.func.isRequired,
+  editingText: PropTypes.string.isRequired,
+  onFocus: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
+  toggleHandler: PropTypes.func.isRequired,
+  todoEditing: PropTypes.number.isRequired,
+};
