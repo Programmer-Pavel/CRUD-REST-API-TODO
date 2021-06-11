@@ -22,7 +22,7 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start -p 3001",
+    "start": "node server.js",
     "build": "react-scripts build",
     "server": "json-server data.json",
     "eject": "react-scripts eject",
