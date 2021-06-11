@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "*",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "eslint": "^7.28.0",
@@ -23,7 +24,8 @@
     "start": "react-scripts start -p 3001",
     "build": "react-scripts build",
     "server": "json-server data.json",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": [
